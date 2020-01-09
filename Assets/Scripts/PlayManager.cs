@@ -15,7 +15,6 @@ public class PlayManager : MonoBehaviour
 
     private void Awake()
     {
-        transform.position = new Vector3(-0.43f, 7f, -7.07f);
         Time.timeScale = 1;
         Debug.Log(Time.timeScale);
     }
@@ -61,6 +60,7 @@ public class PlayManager : MonoBehaviour
         isDead = true;
         if (!saved || lives <= 1)
         {
+            lives = 0;
             gameOverCanvas.enabled = true;
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;

@@ -19,8 +19,8 @@ public class MovementController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float h = Input.GetAxis("Mouse X");
-        float v = Input.GetAxis("Mouse Y");
+        float h = Input.GetAxisRaw("Mouse X");
+        float v = Input.GetAxisRaw("Mouse Y");
 
         Vector3 forward = transform.position - cam.position;
         forward.y = 0;

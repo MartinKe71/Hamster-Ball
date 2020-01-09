@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SavePoint : MonoBehaviour
 {
-    public GameObject text;
+    //public GameObject text;
 
     private MeshRenderer meshRand;
     private ParticleSystem effect;
@@ -15,7 +15,7 @@ public class SavePoint : MonoBehaviour
     {
         meshRand = GetComponent<MeshRenderer>();
         meshRand.material.color = Color.red;
-        text.SetActive(false);
+        //text.SetActive(false);
         effect = GetComponent<ParticleSystem>();
     }
 
@@ -29,7 +29,7 @@ public class SavePoint : MonoBehaviour
             other.GetComponent<PlayManager>().OnSavePoint();
             saved = true;
 
-            text.SetActive(true);
+            //text.SetActive(true);
         }        
     }
 }
